@@ -19,3 +19,34 @@ function projects(){
 		setTimeout(projects, 500);
 	});
 }
+
+function dynamicHeights(){
+	//About section
+	$('.about-thumbnail').css('margin-top', ($('.about-general-description').outerHeight()-$('.about-thumbnail').height())/2);
+	$('.statistic-description-thumbnail').css('margin-top', ($('.about-statistic-description').outerHeight()-$('.statistic-description-thumbnail').height())/2);
+	
+	//Summary section
+	$('.development-img').css('margin-top', ($('.development-description').outerHeight()-$('.development-img').outerHeight())/2);
+	$('.responsive-img').css('margin-top', ($('.responsive-description').outerHeight()-$('.responsive-img').outerHeight())/2);
+	$('.idea-img').css('margin-top', ($('.idea-description').outerHeight()-$('.idea-img').outerHeight())/2);
+	$('.passion-img').css('margin-top', ($('.passion-description').outerHeight()-$('.passion-img').outerHeight())/2);
+
+	//Contact section
+	$('.contact-form-body').css('padding-top', ($('.contact-instructions').outerHeight()-$('.contact-form-body').height())/2);
+
+	$(window).resize(function(){
+		setTimeout(dynamicHeights, 500);
+	});
+}
+
+$(document).ready(function(){
+	$(".primary-nav a, .footer-nav a, .btn").on('click', function(e) {
+		e.preventDefault();
+    	var hash = this.hash;
+    	$('body').animate({
+    		scrollTop: $(hash).offset().top
+      	}, 500, function(){
+    		window.location.hash = hash;
+      	}); 
+	});
+});

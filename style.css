@@ -26,13 +26,12 @@
 	-ms-transition: border 50ms linear;
 	transition: border 50ms linear;
 }
+
 .primary-nav a:hover {
 	text-decoration: none;
 	color: white;
 	border-bottom: 2px solid #F5F5F5;
 }
-
-
 
 /* Main banner */
 .main {
@@ -139,7 +138,6 @@
 
 .summary h3 {font-family: "Source Sans Pro", Arial, sans-serif;}
 .summary p {font-family: "Roboto", Helvetica, serif;}
-
 .projects {
 	background-color: #59585d;
 	padding: 50px;
@@ -225,6 +223,16 @@
 	padding-left: 0;
 }
 
-.home-footer a, .portfolio-footer a, .resume-footer a, .contact-footer a {color: white;}
+.home-footer a, .portfolio-footer a, .resume-footer a, .contact-footer a {
+	color: gray;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
 .home-footer a:hover, .portfolio-footer a:hover, .resume-footer a:hover, .contact-footer a:hover {
+	text-decoration: none;
+	color: white;
 }

@@ -51,11 +51,11 @@
 
 				<div class = "row text-center">
 					<div class = "banner-buttons">
-						<div class = "col-sm-1 col-md-1 col-sm-offset-5 col-md-offset-5">
+						<div class = "col-sm-2 col-md-1 col-sm-offset-4 col-md-offset-5">
 							<a class = "btn btn-default btn-border" href = "#about">Info</a>
 						</div>
 
-						<div class = "col-sm-1 col-md-1">
+						<div class = "col-sm-2 col-md-1">
 							<a class = "btn btn-default btn-border" href = "#projects">Portfolio</a>
 						</div>
 					</div>
@@ -63,11 +63,11 @@
 			</div>
 		</div>
 
-		<div class = "about">
+		<div class = "about" id = "about">
 			<div class = "container-fluid">
 				<div class = "row">
 					<div class = "col-sm-12 col-md-12 text-center">
-						<div class = "about-header" id = "about">
+						<div class = "about-header">
 							<h1>About Me</h1>
 						</div>
 					</div>
@@ -82,14 +82,14 @@
 				</div>
 
 				<div class = "row">
-					<div class = "about-thumbnail">
-						<div class = "col-sm-4 col-md-4 text-center">
+					<div class = "col-sm-4 col-md-4 text-center">
+						<div class = "about-thumbnail">
 							<img class = "img-responsive img-thumbnail" src = "./images/aboutimage.jpg">
 						</div>
 					</div>
 
-					<div class = "about-general-description">
-						<div class = "col-sm-8 col-md-8">
+					<div class = "col-sm-8 col-md-8">
+						<div class = "about-general-description">
 							<h2>General Overview</h2>
 							<p>Honestly, designing websites is hard, but that’s what makes all of the blood, sweat, and tears worth it. The reward of a beautiful, responsive masterpiece scrolling before your eyes and the fear of shifting your gaze away from the screen as to miss more seemingly magical animations and the flawless, responsive pages. As a developer located in Chicago, IL, I’ve had the honor to work for startup companies at 1871 and help create sites to propel businesses forward, turning their bold ideas into reality.</p>
 
@@ -103,15 +103,14 @@
 				</div>
 
 				<div class = "row">
-					<div class = "statistic-row">
-					<div class = "static-description-thumbnail">
-						<div class = "col-sm-4 col-md-4">
+					<div class = "col-sm-4 col-md-4">
+						<div class = "statistic-description-thumbnail">
 							<img class = "img-responsive img-thumbnail" src = "./images/aboutimage2.jpg">
 						</div>
 					</div>
 
-					<div class = "about-statistic-description">
-						<div class = "col-sm-8 col-md-8">
+					<div class = "col-sm-8 col-md-8">
+						<div class = "about-statistic-description">
 							<h2>Statistics</h2>
 							<h5><em>And for those that don't fancy reading:</em></h5>
 							</br>
@@ -130,7 +129,6 @@
 							<p>Present: Freshman CS undergraduate at the University of Illinois at Urbana Champaign</p>
 							<p>August 2014 - June 2017: Student at the Illinois Math and Science Academy</p>
 						</div>
-					</div>
 					</div>
 				</div>
 
@@ -202,7 +200,9 @@
 
 					<div class = "passion-summary">
 						<div class = "col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
-							<img class = "img-responsive" src = "./images/passion.svg">
+							<div class = "passion-img">
+								<img class = "img-responsive" src = "./images/passion.svg">
+							</div>
 						</div>
 
 						<div class = "col-sm-4 col-md-4">
@@ -216,11 +216,11 @@
 			</div>
 		</div>
 
-		<div class = "projects">
+		<div class = "projects" id = "projects">
 			<div class = "container-fluid">
 				<div class = "row">
 					<div class = "col-sm-12 col-md-12 text-center">
-						<div class = "projects-header" id = "projects">
+						<div class = "projects-header">
 							<h1>Projects and Portfolio</h1>
 						</div>
 					</div>
@@ -288,11 +288,11 @@
 			</div>
 		</div>
 
-		<div class = "resume">
+		<div class = "resume" id = "resume">
 			<div class = "container">
 				<div class = "row">
 					<div class = "col-sm-12 col-md-12 text-center">
-						<div class = "resume-header" id = "resume">
+						<div class = "resume-header">
 							<h1>Resume</h1>
 						</div>
 					</div>
@@ -509,11 +509,11 @@
 			</div>
 		</div>
 
-		<div class = "contact">
+		<div class = "contact" id = "contact">
 			<div class = "container-fluid">
 				<div class = "row">
 					<div class = "col-sm-12 col-md-12 text-center">
-						<div class = "contact-header" id = "contact">
+						<div class = "contact-header">
 							<h1>Contact</h1>
 						</div>
 					</div>
@@ -640,45 +640,47 @@
 					</div>
 				</div>
 
-				<div class = "row">
-					<div class = "col-sm-4 col-md-4 text-center">
-						<div class = "company-information">
-							<h3>Roy Chiu</h3>
-							<h4>Copyright &copy; 2017</h4>
-							<h4>Chicago, IL</h4>
+				<div class = "footer-nav">
+					<div class = "row">
+						<div class = "col-sm-4 col-md-4 text-center">
+							<div class = "company-information">
+								<h3>Roy Chiu</h3>
+								<h4>Copyright &copy; 2017</h4>
+								<h4>Chicago, IL</h4>
+							</div>
 						</div>
-					</div>
 
-					<div class = "col-sm-2 col-md-2 text-center">
-						<div class = "home-footer">
-							<h4><a href = "#home">Home</a></h4>
+						<div class = "col-sm-2 col-md-2 text-center">
+							<div class = "home-footer">
+								<h4><a href = "#home">Home</a></h4>
+							</div>
 						</div>
-					</div>
 
-					<div class = "col-sm-2 col-md-2 text-center">
-						<div class = "portfolio-footer">
-							<h4><a href = "#projects">Portfolio</a></h4>
-							<ul>
-								<li><a href = "#">Project1</a></li>
-								<li><a href = "#">Project2</a></li>
-								<li><a href = "#">Project3</a></li>
-								<li><a href = "#">See All</a></li>
-							</ul>
+						<div class = "col-sm-2 col-md-2 text-center">
+							<div class = "portfolio-footer">
+								<h4><a href = "#projects">Portfolio</a></h4>
+								<ul>
+									<li><a href = "#">Project1</a></li>
+									<li><a href = "#">Project2</a></li>
+									<li><a href = "#">Project3</a></li>
+									<li><a href = "#">See All</a></li>
+								</ul>
+							</div>
 						</div>
-					</div>
 
-					<div class = "col-sm-2 col-md-2 text-center">
-						<div class = "resume-footer">
-							<h4><a href = "#resume">Resume</a></h4>
-							<ul>
-								<li><a href = "#">Download</a></li>
-							</ul>
+						<div class = "col-sm-2 col-md-2 text-center">
+							<div class = "resume-footer">
+								<h4><a href = "#resume">Resume</a></h4>
+								<ul>
+									<li><a href = "#">Download</a></li>
+								</ul>
+							</div>
 						</div>
-					</div>
 
-					<div class = "col-sm-2 col-md-2 text-center">
-						<div class = "contact-footer">
-							<h4><a href = "#contact">Contact</a></h4>
+						<div class = "col-sm-2 col-md-2 text-center">
+							<div class = "contact-footer">
+								<h4><a href = "#contact">Contact</a></h4>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -688,6 +690,7 @@
 		<script>
 			navigation();
 			projects();
+			dynamicHeights();
 		</script>
 	</body>
 </html>
