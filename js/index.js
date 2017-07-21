@@ -22,11 +22,52 @@ function projects(){
 	});
 }
 
-function dynamicHeights(){
+function dynamicHeights(){ //Resize handler for window onload function
 	//About section
-	$('.about-thumbnail').css('margin-top', ($('.about-general-description').outerHeight()-$('.about-thumbnail').height())/2);
-	$('.statistic-description-thumbnail').css('margin-top', ($('.about-statistic-description').outerHeight()-$('.statistic-description-thumbnail').height())/2);
+	//Determine if the image is larger than the description box - larger screen widths
+	//If the description is smaller than the image, center description instead of image
+	if ($('.about-thumbnail').height() < $('.about-general-description').outerHeight()){
+		$('.about-thumbnail').css('margin-top', ($('.about-general-description').outerHeight()-$('.about-thumbnail').height())/2);
+	}
+	else {
+		$('.about-general-description').css('margin-top', ($('.about-thumbnail').outerHeight()-$('.about-general-description').height())/2);
+	}
+
+	if ($('.statistic-description-thumbnail').height() < $('.about-statistic-description').outerHeight()){
+		$('.statistic-description-thumbnail').css('margin-top', ($('.about-statistic-description').outerHeight()-$('.statistic-description-thumbnail').height())/2);
+	}
+	else {
+		$('.about-statistic-description').css('margin-top', ($('.statistic-description-thumbnail').outerHeight()-$('.about-statistic-description').height())/2);
+	}
 	
+	//Summary section
+	$('.development-img').css('margin-top', ($('.development-description').outerHeight()-$('.development-img').outerHeight())/2);
+	$('.responsive-img').css('margin-top', ($('.responsive-description').outerHeight()-$('.responsive-img').outerHeight())/2);
+	$('.idea-img').css('margin-top', ($('.idea-description').outerHeight()-$('.idea-img').outerHeight())/2);
+	$('.passion-img').css('margin-top', ($('.passion-description').outerHeight()-$('.passion-img').outerHeight())/2);
+
+	//Contact section
+	$('.contact-form-body').css('padding-top', ($('.contact-instructions').outerHeight()-$('.contact-form-body').height())/2);
+}
+
+window.onload = function(){
+	//About section
+	//Determine if the image is larger than the description box - larger screen widths
+	//If the description is smaller than the image, center description instead of image
+	if ($('.about-thumbnail').height() < $('.about-general-description').outerHeight()){
+		$('.about-thumbnail').css('margin-top', ($('.about-general-description').outerHeight()-$('.about-thumbnail').height())/2);
+	}
+	else {
+		$('.about-general-description').css('margin-top', ($('.about-thumbnail').outerHeight()-$('.about-general-description').height())/2);
+	}
+
+	if ($('.statistic-description-thumbnail').height() < $('.about-statistic-description').outerHeight()){
+		$('.statistic-description-thumbnail').css('margin-top', ($('.about-statistic-description').outerHeight()-$('.statistic-description-thumbnail').height())/2);
+	}
+	else {
+		$('.about-statistic-description').css('margin-top', ($('.statistic-description-thumbnail').outerHeight()-$('.about-statistic-description').height())/2);
+	}
+
 	//Summary section
 	$('.development-img').css('margin-top', ($('.development-description').outerHeight()-$('.development-img').outerHeight())/2);
 	$('.responsive-img').css('margin-top', ($('.responsive-description').outerHeight()-$('.responsive-img').outerHeight())/2);
@@ -37,7 +78,7 @@ function dynamicHeights(){
 	$('.contact-form-body').css('padding-top', ($('.contact-instructions').outerHeight()-$('.contact-form-body').height())/2);
 
 	$(window).resize(function(){
-		setTimeout(dynamicHeights, 500);
+		setTimeout(dynamicHeights, 1000);
 	});
 }
 
