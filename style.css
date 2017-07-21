@@ -152,7 +152,6 @@
 }
 
 .projects-header-quote {font-style: italic;}
-/*.luvtalk-project, .personal-website-project, .strike-zone-project, .resume {border: 3px solid white;}*/
 .luvtalk-project {
 	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(./images/luvtalklogo.png);
 	background-position: center center;
@@ -165,6 +164,11 @@
 
 .strike-zone-project {
 	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(./images/mlbproject.png);
+	background-position: center center;
+}
+
+.sdac-project {
+	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(./images/sdacproject.jpg);
 	background-position: center center;
 }
 
@@ -190,6 +194,7 @@
 	padding: 0px 6%;
 }
 
+.lastname h4 {visibility: hidden;}
 .email, .message {margin: 15px 0px;}
 .contact input, .contact textarea {
 	width: 100%;

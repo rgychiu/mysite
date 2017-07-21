@@ -14,6 +14,8 @@ function projects(){
 	$('.personal-website-project h3').css('padding-top', ($('.personal-website-project').height() - $('.personal-website-project h3').height() - $('.personal-website-project .row').outerHeight())/2);
 	$('.strike-zone-project').css('height', $('.strike-zone-project').width());
 	$('.strike-zone-project h3').css('padding-top', ($('.strike-zone-project').height() - $('.strike-zone-project h3').height() - $('.strike-zone-project .row').outerHeight())/2);
+	$('.sdac-project').css('height', $('.sdac-project').width());
+	$('.sdac-project h3').css('padding-top', ($('.sdac-project').height() - $('.sdac-project h3').height() - $('.sdac-project .row').outerHeight())/2);
 
 	$(window).resize(function(){
 		setTimeout(projects, 500);
