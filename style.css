@@ -6,6 +6,7 @@
 	width: 100%;
 	padding: 10px 0px;
 	background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.1));
+	z-index: 999;
 }
 
 .logo img {max-width: 90px;}
@@ -33,6 +34,8 @@
 	border-bottom: 2px solid #F5F5F5;
 }
 
+
+/******** HOME PAGE ********/
 /* Main banner */
 .main {
 	background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(./images/apple-1838564_1920-main.jpg); /* Browser prefixes*/
@@ -198,11 +201,54 @@
 .email, .message {margin: 15px 0px;}
 .contact input, .contact textarea {
 	width: 100%;
+	color: black;
 	padding: 10px;
-	margin: 3px 0px
+	margin: 3px 0px;
+}
+
+.validate-error {
+	display: none;
+	color: red;
 }
 
 .submit-contact .btn-border {margin-top: 10px;}
+/******* END HOME PAGE ********/
+
+
+/******* START PROJECTS PAGE *******/
+.projects-banner {
+	background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(./images/projectsmainimage.jpg); /* Browser prefixes*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 100vh;
+	color: white;
+}
+
+.projects-banner h1 {
+	margin-top: 42vh;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-size: 100pt;
+}
+
+.projects-selector {border-right: 1px solid #D0D0D0;}
+.projects-selector ul {
+	list-style: none;
+	padding: 20px 0 50px 0; /*Eliminate ul indent */
+	margin: 0;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-size: 14pt;
+}
+
+.projects-selector ul li {
+	padding: 10px;
+}
+
+.projects-description {padding: 20px 35px 50px 35px;}
+.projects-description h2 {font-family: "Source Sans Pro", Arial, sans-serif;}
+.projects-description p {font-family: "Roboto", Helvetica, serif;}
+/******* END PROJECTS PAGE *******/
+
 .footer {
 	background-color: black;
 	color: white;

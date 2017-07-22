@@ -295,7 +295,7 @@
 				<div class = "row">
 					<div class = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
 						<div class = "see-more-button">
-							<a class = "btn btn-default btn-border" href = "#">All Projects</a>
+							<a class = "btn btn-default btn-border" href = "projects.html">All Projects</a>
 						</div>
 					</div>
 				</div>
@@ -516,7 +516,7 @@
 				<div class = "row">
 					<div class = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
 						<div class = "download-resume">
-							<a class = "btn btn-default btn-black-border" href = "Chiu,Roy, CSResume.pdf" download = "">Download Resume</a>
+							<a class = "btn btn-default btn-black-border" href = "Chiu, Roy, CSResume.pdf" download = "">Download Resume</a>
 						</div>
 					</div>
 				</div>
@@ -566,6 +566,7 @@
 										<div class = "firstname">
 											<h4>Full Name *</h4>
 											<input type = "text" placeholder= "First Name">
+											<p class = "firstname-error validate-error">Please enter a valid first name so I know who to contact!</p>
 										</div>
 									</div>
 
@@ -573,6 +574,7 @@
 										<div class = "lastname">
 											<h4>Full Name *</h4>
 											<input type = "text" placeholder= "Last Name">
+											<p class = "lastname-error validate-error">Please enter a valid last name so I know who to contact!</p>
 										</div>
 									</div>
 								</div>
@@ -581,7 +583,8 @@
 									<div class = "col-sm-12 col-md-12">
 										<div class = "email">
 											<h4>Email *</h4>
-											<input type = "text" placeholder= "Email">
+											<input type = "email" placeholder= "Email">
+											<p class = "email-error validate-error">Please enter a valid email so that I can reply!</p>
 										</div>
 									</div>
 								</div>
@@ -591,6 +594,7 @@
 										<div class = "message">
 											<h4>Message *</h4>
 											<textarea placeholder= "Message"></textarea>
+											<p class = "message-error validate-error">Please enter a message.</p>
 										</div>
 									</div>
 								</div>
@@ -598,7 +602,7 @@
 								<div class = "row">
 									<div class = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
 										<div class = "submit-contact">
-											<a class = "btn btn-default btn-border" href = "#">Submit</a>
+											<a class = "btn btn-default btn-border" onclick = "contactFormSubmit()" enctype = "text/plain">Submit</a>
 										</div>
 									</div>
 								</div>
@@ -674,9 +678,9 @@
 							<div class = "portfolio-footer">
 								<h4><a href = "#projects">Portfolio</a></h4>
 								<ul>
-									<li><a href = "#">Project1</a></li>
-									<li><a href = "#">Project2</a></li>
-									<li><a href = "#">Project3</a></li>
+									<li><a href = "#">LUV TALK</a></li>
+									<li><a href = "#">My Site</a></li>
+									<li><a href = "#">Sabermetrics</a></li>
 									<li><a href = "#">See All</a></li>
 								</ul>
 							</div>
@@ -686,7 +690,7 @@
 							<div class = "resume-footer">
 								<h4><a href = "#resume">Resume</a></h4>
 								<ul>
-									<li><a href = "#">Download</a></li>
+									<li><a href = "Chiu, Roy, CSResume.pdf" download = "">Download</a></li>
 								</ul>
 							</div>
 						</div>
@@ -703,6 +707,7 @@
 		<script type = "text/javascript" src = "./js/index.js"></script>
 		<script>
 			navigation();
+			homeNav();
 			projects();
 		</script>
 	</body>
