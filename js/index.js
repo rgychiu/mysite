@@ -170,3 +170,25 @@ function bodyNavigationHeight(){
 		setTimeout(bodyNavigationHeight, 1000);
 	});
 }
+
+function projectsSelector(){
+	var activeLinks = document.getElementsByClassName('active-link');
+	var activeBodies = document.getElementsByClassName('active');
+	$('.projects-selector a').on('click', function(){
+		var buttonText = $(this).text();
+		for (var i = 0; i < activeLinks.length; i++){
+			activeLinks[i].className = activeLinks[i].className.replace('active-link', ''); //Change anchor element that's active
+		}
+		for (var i = 0; i < activeBodies.length; i++){
+			activeBodies[i].className = activeBodies[i].className.replace('active', 'disabled'); //Change visible text to active element's
+		}
+		$(this).addClass('active-link');
+		if (/\s/.test(buttonText)){ //Check if the text has a space and replace with hyphen, allowing active content switching
+			buttonText = 'projects-' + buttonText.replace(' ', '-').toLowerCase();
+		}
+		else { //Else only change text to lowercase to match html class
+			buttonText = 'projects-' + buttonText.toLowerCase();
+		}
+		$('.' + buttonText).toggleClass('disabled active'); //Replace class that was selected to visible
+	});
+}

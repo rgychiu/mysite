@@ -56,11 +56,11 @@
 					<div class = "col-sm-5 col-md-3 text-center">
 						<div class = "projects-selector">
 							<ul>
-								<li>General</li>
-								<li>LUV TALK</li>
-								<li>My Site</li>
-								<li>Sabermetrics</li>
-								<li>Breakdancing</li>
+								<li><a class = "active-link">General</a></li>
+								<li><a>LUV TALK</a></li>
+								<li><a>My Site</a></li>
+								<li><a>Sabermetrics</a></li>
+								<li><a>Breakdancing</a></li>
 							</ul>
 						</div>
 					</div>
@@ -68,30 +68,52 @@
 
 					<div class = "col-sm-7 col-md-9">
 						<div class = "projects-description">
-							<h2 class = "projects-general text-center">General Information</h2>
-							<p class = "projects-general">Welcome to the projects page! Here you'll not only find all of the projects that were listed on the home page, but also all of the projects that I have completed. The projects that are listed on this page can be a wide variety of topics and is not limited to only programming or computer science related topics. Please feel free to browse and explore the projects that I have completed using the navigation on the left. If the project is related to programming, the code will most likely be found on my Github profile. My handle is rgychiu. If you would like to contribute to any of these projects or would just like to make a suggestion to fix an error or improve my code, please feel free to reach out to me via email or Github. Thanks for stopping by!</p>
-						</br>
-							<p class = "projects-general">Below is general description of each of the projects that are listed in the navigation panel. If you are interested in the project or are looking for a more detailed description, please navigate to the corresponding tab, where an in-depth explanation will be included.</p>
-						</br>
+							<div class = "projects-general active">
+								<h2 class = "text-center">General Information</h2>
+								<p>Welcome to the projects page! Here you'll not only find all of the projects that were listed on the home page, but also all of the projects that I have completed. The projects that are listed on this page can be a wide variety of topics and is not limited to only programming or computer science related topics. Please feel free to browse and explore the projects that I have completed using the navigation on the left. If the project is related to programming, the code will most likely be found on my Github profile. My handle is rgychiu. If you would like to contribute to any of these projects or would just like to make a suggestion to fix an error or improve my code, please feel free to reach out to me via email or Github. Thanks for stopping by!</p>
+							</br>
+								<p>Below is general description of each of the projects that are listed in the navigation panel. If you are interested in the project or are looking for a more detailed description, please navigate to the corresponding tab, where an in-depth explanation will be included.</p>
+							</br>
 
 
-							<h2 class = "projects-general text-center">LUV TALK, Inc.</h2>
-							<p class = "projects-general">This project was completed during my internship with a startup company in Chicago's startup incubator, 1871. My involvement with the company was facilitated through an organization at the Illinois Math and Science Academy and focused on entrepreneurship and innovation. Through the club, I was able to gain connections with companies at 1871 and ultimately apply and increase my knowledge of web development with LUV TALK.</p>
-						</br>
+								<h2 class = "text-center">LUV TALK, Inc.</h2>
+								<p>This project was completed during my internship with a startup company in Chicago's startup incubator, 1871. My involvement with the company was facilitated through an organization at the Illinois Math and Science Academy and focused on entrepreneurship and innovation. Through the club, I was able to gain connections with companies at 1871 and ultimately apply and increase my knowledge of web development with LUV TALK.</p>
+							</br>
 
 
-							<h2 class = "projects-general text-center">Personal Website</h2>
-							<p class = "projects-general">The personal website was created as a fun projet to exercise and experiment with web development. In addition, it also serves as a location to share my creations and hobbies. As more events occur throughout my life and as I create more interesting projects, the site will continue to expand and grow, becoming larger, better, and equipped with a wider range of features and functionalities. Stay tuned!</p>
-						</br>
+								<h2 class = "text-center">Personal Website</h2>
+								<p>The personal website was created as a fun projet to exercise and experiment with web development. In addition, it also serves as a location to share my creations and hobbies. As more events occur throughout my life and as I create more interesting projects, the site will continue to expand and grow, becoming larger, better, and equipped with a wider range of features and functionalities. Stay tuned!</p>
+							</br>
 
 
-							<h2 class = "projects-general text-center">Sabermetrics</h2>
-							<p class = "projects-general">Sabermetrics was a project that was started at the Illinois Mathematics and Science Academy and dealt with data analysis in baseball. Data from MLB was acquired and detailed several years of pitches, game states, calls, and player stats, which was ultimately transformed into quantitative analysis and a final project.</p>
-						</br>
+								<h2 class = "text-center">Sabermetrics</h2>
+								<p>Sabermetrics was a project that was started at the Illinois Mathematics and Science Academy and dealt with data analysis in baseball. Data from MLB was acquired and detailed several years of pitches, game states, calls, and player stats, which was ultimately transformed into quantitative analysis and a final project.</p>
+							</br>
 
 
-							<h2 class = "projects-general text-center">Breakdancing Video</h2>
-							<p class = "projects-general">This fun project was created in an effort to publicize a dance organization at the Illinois Math and Science Academy, Spreading Dance Across Campus. In addition, the video also assisted in helping my friend and me to improve at breakdancing through watching recordings and identifying mistakes.</p>
+								<h2 class = "text-center">Breakdancing Video</h2>
+								<p>This fun project was created in an effort to publicize a dance organization at the Illinois Math and Science Academy, Spreading Dance Across Campus. In addition, the video also assisted in helping 	my friend and me to improve at breakdancing through watching recordings and identifying mistakes.</p>
+							</div>
+
+							<div class = "projects-luv-talk disabled">
+								<h2 class = "text-center">The LUV TALK Website</h2>
+								<p>In-depth description and thumbnail coming soon</p>
+							</div>
+
+							<div class = "projects-my-site disabled">
+								<h2 class = "text-center">The Personal Website</h2>
+								<p>In-depth description and thumbnail coming soon</p>
+							</div>
+
+							<div class = "projects-sabermetrics disabled">
+								<h2 class = "text-center">The Sabermetrics Project</h2>
+								<p>In-depth description and thumbnail coming soon</p>
+							</div>
+
+							<div class = "projects-breakdancing disabled">
+								<h2 class = "text-center">The Breakdance Video</h2>
+								<p>In-depth description and thumbnail coming soon</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -193,6 +215,7 @@
 		<script>
 			navigation();
 			bodyNavigationHeight();
+			projectsSelector();
 		</script>
 	</body>
 </html>
