@@ -104,7 +104,7 @@
 }
 
 .about-statistic-description p {margin: 5px 0px;}
-.about-option-buttons .btn-black-border, .resume .btn-black-border {
+.about-option-buttons .btn-black-border, .resume .btn-black-border, .projects-breakdancing .btn-black-border {
 	background-color: transparent;
 	width: 100%;
 	margin-top: 40px;
@@ -120,7 +120,7 @@
 	transition: all 200ms ease-out;
 }
 
-.about-option-buttons .btn-black-border:hover, .resume .btn-black-border:hover {
+.about-option-buttons .btn-black-border:hover, .resume .btn-black-border:hover, .projects-breakdancing .btn-black-border:hover {
 	border: 2px solid #464646;
 	background-color: #464646;
 	color: white;
@@ -264,8 +264,9 @@
 
 .projects-description h2 {font-family: "Source Sans Pro", Arial, sans-serif;}
 .projects-description p {font-family: "Roboto", Helvetica, serif;}
-.active {display: initial;}
-.disabled {display: none;}
+.disabled {position: absolute;}
+.video {text-align: center;}
+.projects-breakdancing .btn-black-border {margin: -30px 0px 20px 0px;}
 /******* END PROJECTS PAGE *******/
 
 .footer {

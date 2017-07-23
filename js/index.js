@@ -10,7 +10,7 @@ function navigation(){
 // HOME PAGE JS
 function homeNav(){
 	$(document).ready(function(){
-		$(".primary-nav a, .footer-nav a, .main .btn, .about .btn").on('click', function(e) {
+		$(".primary-nav a, .navable, .main .btn, .about .btn").on('click', function(e) {
 			e.preventDefault();
 	    	var hash = this.hash;
 	    	$('body').animate({
@@ -172,6 +172,7 @@ function bodyNavigationHeight(){
 }
 
 function projectsSelector(){
+	$('.disabled').hide();
 	var activeLinks = document.getElementsByClassName('active-link');
 	var activeBodies = document.getElementsByClassName('active');
 	$('.projects-selector a').on('click', function(){
@@ -181,6 +182,7 @@ function projectsSelector(){
 		}
 		for (var i = 0; i < activeBodies.length; i++){
 			activeBodies[i].className = activeBodies[i].className.replace('active', 'disabled'); //Change visible text to active element's
+			$('.disabled').hide();
 		}
 		$(this).addClass('active-link');
 		if (/\s/.test(buttonText)){ //Check if the text has a space and replace with hyphen, allowing active content switching
@@ -190,5 +192,15 @@ function projectsSelector(){
 			buttonText = 'projects-' + buttonText.toLowerCase();
 		}
 		$('.' + buttonText).toggleClass('disabled active'); //Replace class that was selected to visible
+		$('.active').fadeIn(750);
 	});
+}
+
+function playPause(){
+	if (document.getElementById('projects-sdac-video').paused){
+		document.getElementById('projects-sdac-video').play();
+	}
+	else {
+		document.getElementById('projects-sdac-video').pause();
+	}
 }
