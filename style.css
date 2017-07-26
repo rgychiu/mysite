@@ -288,6 +288,11 @@
 }
 
 .footer img:hover {background-color: white;}
+.personal-contact h4 span {
+	font-size: 14pt;
+	margin: 0 20px;
+}
+
 .company-information, .home-footer, .portfolio-footer, .resume-footer, .contact-footer {margin-top: 50px;}
 .footer ul {
 	list-style: none;
@@ -306,4 +311,22 @@
 .home-footer a:hover, .portfolio-footer a:hover, .resume-footer a:hover, .contact-footer a:hover {
 	text-decoration: none;
 	color: white;
+}
+
+@media screen and (max-width: 769px){
+	/* HOME PAGE MOBILE STYLING*/
+	.summary {text-align: center;}
+	.summary img {
+		display: block;
+		margin: auto;
+		padding: 15%;
+	}
+
+	.projects {padding: 50px 0;}
+	.contact {padding: 50px 0;}
+	/* END HOME PAGE MOBILE STYLING*/
+
+	/* PROJECTS PAGE MOBILE STYLING*/
+	.projects-banner-header h1 {font-size: 65pt;}
+	/* END PROJECTS PAGE MOBILE STYLING*/
 }
