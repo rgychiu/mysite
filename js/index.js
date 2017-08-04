@@ -1,6 +1,6 @@
 function navigation(){
 	$('.primary-nav').css('height', $('.logo').height());
-	$('.primary-nav li').css('margin-top', ($('.primary-nav').height()-$('.primary-nav li').height())/2 + 'px')
+	$('.primary-nav li').css('margin-top', ($('.primary-nav').height()-$('.primary-nav li').height())/2 + 'px');
 
 	$(window).resize(function(){
 		setTimeout(navigation, 500);
@@ -132,6 +132,10 @@ function contactFormSubmit(){
 }
 
 window.onload = function(){
+	//Navigation
+	$('.primary-nav').css('height', $('.logo').height());
+	$('.primary-nav li').css('margin-top', ($('.primary-nav').height()-$('.primary-nav li').height())/2 + 'px');
+
 	//About section
 	//Determine if the image is larger than the description box - larger screen widths
 	//If the description is smaller than the image, center description instead of image
@@ -162,6 +166,7 @@ window.onload = function(){
 
 	$(window).resize(function(){
 		setTimeout(dynamicHeights, 1000);
+		setTimeout(navigation, 1500);
 	});
 }
 // END HOME PAGE JS

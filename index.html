@@ -16,16 +16,25 @@
 		<noscript>You are seeing this message because you don't have Javascript enabled. Please enable Javascript for the site to work properly. Or, <a href="#">visit an alternative site without Javscript</a>.</noscript>
 
 		<!-- Navigation Bar -->
-		<div class = "navigation">
+		<nav class = "navigation navbar-inverse" id = "bootstrap-override-nav">
 			<div class = "container-fluid">
 				<div class = "row">
-					<div class = "col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
-						<div class = "logo">
-							<a href = "index.html"><img src = "images/logo.svg"></a>
+					<div class = "navbar-header">
+						<div class = "col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
+							<div class = "logo">
+								<a href = "index.html"><img src = "images/logo.svg"></a>
+							</div>
 						</div>
+
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar">
+             				<span class="sr-only">Toggle navigation</span>
+              				<span class="icon-bar"></span>
+              				<span class="icon-bar"></span>
+              				<span class="icon-bar"></span>
+            			</button>
 					</div>
 
-					<div class = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right">
+					<div class = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right navbar-collapse collapse navbar-right" id = "navigationbar">
 						<div class = "primary-nav">
 							<ul>
 								<li><a href = "index.html">Home</a></li>
@@ -38,7 +47,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 
 		<!-- Main body content -->
 		<div class = "main">
@@ -677,9 +686,9 @@
 							<div class = "portfolio-footer">
 								<h4><a href = "#projects">Portfolio</a></h4>
 								<ul>
-									<li><a href = "#">LUV TALK</a></li>
-									<li><a href = "#">My Site</a></li>
-									<li><a href = "#">Sabermetrics</a></li>
+									<li><a href = "projects.html">LUV TALK</a></li>
+									<li><a href = "projects.html">My Site</a></li>
+									<li><a href = "projects.html">Sabermetrics</a></li>
 									<li><a href = "projects.html" class = "navable">See All</a></li>
 								</ul>
 							</div>
@@ -705,7 +714,6 @@
 		</div>
 		<script type = "text/javascript" src = "./js/index.js"></script>
 		<script>
-			navigation();
 			homeNav();
 			projects();
 		</script>

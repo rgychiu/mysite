@@ -1,15 +1,25 @@
 /* Source sans pro for titles/headers, Roboto for description, slabo for serif intros*/
 
 /* Navigation */
-.navigation {
+#bootstrap-override-nav { /* Override bootstrap styling for navbars using ID selector*/
 	position: absolute;
 	width: 100%;
 	padding: 10px 0px;
-	background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.1));
+	background: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2));
 	z-index: 999;
 }
 
-.logo img {max-width: 90px;}
+.navigation > .container-fluid > .row > .navbar-header > .navbar-toggle {margin-top: 5%;}
+.in > .primary-nav > ul > li {
+	display: block;
+	text-align: center;
+}
+
+.logo img {
+	max-width: 90px;
+	margin-left: 35px;
+}
+
 .primary-nav {padding-right: 50px;}
 .primary-nav li {
 	display: inline-block;
@@ -329,4 +339,13 @@
 	/* PROJECTS PAGE MOBILE STYLING*/
 	.projects-banner-header h1 {font-size: 65pt;}
 	/* END PROJECTS PAGE MOBILE STYLING*/
+}
+
+@media screen and (max-width: 550px){
+	/* HOME PAGE MOBILE STYLING*/
+	.main {padding: 31% 0;}
+	#hello {font-size: 20pt;}
+	#name {font-size: 74pt;}
+	#person-description {font-size: 26pt;}
+	/* END HOME PAGE MOBILE STYLING */
 }

@@ -14,16 +14,25 @@
 
 	<body>
 		<!-- Navigation Bar -->
-		<div class = "navigation">
+		<nav class = "navigation navbar-inverse" id = "bootstrap-override-nav">
 			<div class = "container-fluid">
 				<div class = "row">
-					<div class = "col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
-						<div class = "logo">
-							<a href = "index.html"><img src = "images/logo.svg"></a>
+					<div class = "navbar-header">
+						<div class = "col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
+							<div class = "logo">
+								<a href = "index.html"><img src = "images/logo.svg"></a>
+							</div>
 						</div>
+
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar">
+             				<span class="sr-only">Toggle navigation</span>
+              				<span class="icon-bar"></span>
+              				<span class="icon-bar"></span>
+              				<span class="icon-bar"></span>
+            			</button>
 					</div>
 
-					<div class = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right">
+					<div class = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right navbar-collapse collapse navbar-right" id = "navigationbar">
 						<div class = "primary-nav">
 							<ul>
 								<li><a href = "index.html">Home</a></li>
@@ -36,7 +45,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 
 		<div class = "projects-banner">
 			<div class = "container-fluid">
