@@ -13,6 +13,8 @@
 	</head>
 
 	<body>
+		<noscript>You are seeing this message because you don't have Javascript enabled. Please enable Javascript for the site to work properly. Or, <a href="#">visit an alternative site without Javscript</a>.</noscript>
+		
 		<!-- Navigation Bar -->
 		<nav class = "navigation navbar-inverse" id = "bootstrap-override-nav">
 			<div class = "container-fluid">
@@ -62,15 +64,38 @@
 		<div class = "projects-content">
 			<div class = "container-fluid">
 				<div class = "row">
-					<div class = "col-sm-5 col-md-3 text-center">
-						<div class = "projects-selector">
-							<ul>
-								<li><a class = "active-link">General</a></li>
-								<li><a>LUV TALK</a></li>
-								<li><a>My Site</a></li>
-								<li><a>Sabermetrics</a></li>
-								<li><a>Breakdancing</a></li>
-							</ul>
+					<div class = "selector-wrapper">
+						<div class = "col-sm-5 col-md-3 text-center">
+							<div class = "projects-selector">
+								<ul>
+									<li><a class = "active-link">General</a></li>
+									<li><a>LUV TALK</a></li>
+									<li><a>My Site</a></li>
+									<li><a>Sabermetrics</a></li>
+									<li><a>Breakdancing</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class = "projects-dropdown dropdown-wrapper">
+						<div class = "col-sm-12 col-md-12">
+							<div class = "dropdown" id = "dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select a Project...
+  									<span class="caret"></span>
+  								</button>
+ 								<ul class="dropdown-menu">
+    								<li class = "active-link"><a>General</a></li>
+    								<li class = "divider"></li>
+    								<li><a>LUV TALK</a></li>
+    								<li class = "divider"></li>
+    								<li><a>My Site</a></li>
+    								<li class = "divider"></li>
+    								<li><a>Sabermetrics</a></li>
+    								<li class = "divider"></li>
+    								<li><a>Breakdancing</a></li>
+  								</ul>
+							</div>
 						</div>
 					</div>
 				
@@ -119,7 +144,7 @@
 							</div>
 
 							<div class = "projects-my-site disabled">
-								<img src = "./images/logo.svg" class = "center-block img-responsive">
+								<img src = "./images/logoblack.png" class = "center-block img-responsive">
 								<h2 class = "text-center">The Personal Website</h2>
 								<p>The personal project was project inspired by the ability to host sites off of Github or for free as well as by my involvement with LUV TALK. Through working with their staging site, my knowledge of HTML, CSS, and Javascript, among other languages, increased past the information that I acquired through the courses that I took my freshman year. As a result, I desired to create my own website to exercise these newfound skills and possibly increase them further while experimenting, adding creative and pleasant effects along with other features.</p>
 								</br>
@@ -154,7 +179,7 @@
 								</div>
 
 								<div class = "col-sm-12 col-md-12">
-									<h2 class = "text-center">The Breakdance Video</h2>
+									<h2 class = "text-center">Breakdance Video</h2>
 									<p>At the Illinois Math and Science Academy, there exists an organization called Spreading Dance Across Campus (SDAC). This club aims to spread dance culture and styles to the students at the academy and allow others to join, learning these styles from their peers and performing in cultural shows.</p>
 									</br>
 									<p>This video was created in order to help advertise for the club as well as assist my friend and me improve. The filming was done on campus, while the filming and editing were done by other members of the club. Other videos with original choreography as well as the organization's performances can be found at this <a href="https://www.youtube.com/channel/UCNhtVvkwN6GXVQb4FysuxAA" target = "_blank">link</a>.</p>

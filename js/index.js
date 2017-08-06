@@ -43,14 +43,14 @@ function dynamicHeights(){ //Resize handler for window onload function
 	//About section
 	//Determine if the image is larger than the description box - larger screen widths
 	//If the description is smaller than the image, center description instead of image
-	if ($('.about-thumbnail').height() < $('.about-general-description').outerHeight()){
+	if ($('.about-thumbnail').height() < $('.about-general-description').outerHeight() && $(window).width() > 767){
 		$('.about-thumbnail').css('margin-top', ($('.about-general-description').outerHeight()-$('.about-thumbnail').height())/2);
 	}
 	else {
 		$('.about-general-description').css('margin-top', ($('.about-thumbnail').outerHeight()-$('.about-general-description').height())/2);
 	}
 
-	if ($('.statistic-description-thumbnail').height() < $('.about-statistic-description').outerHeight()){
+	if ($('.statistic-description-thumbnail').height() < $('.about-statistic-description').outerHeight() && $(window).width() > 767){
 		$('.statistic-description-thumbnail').css('margin-top', ($('.about-statistic-description').outerHeight()-$('.statistic-description-thumbnail').height())/2);
 	}
 	else {
@@ -186,7 +186,7 @@ function projectsSelector(){
 	$('.disabled').hide();
 	var activeLinks = document.getElementsByClassName('active-link');
 	var activeBodies = document.getElementsByClassName('active');
-	$('.projects-selector a').on('click', function(){
+	$('.projects-selector a, #dropdown .dropdown-menu li a').on('click', function(){
 		var buttonText = $(this).text();
 		for (var i = 0; i < activeLinks.length; i++){
 			activeLinks[i].className = activeLinks[i].className.replace('active-link', ''); //Change anchor element that's active
