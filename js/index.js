@@ -204,6 +204,7 @@ function projectsSelector(){
 		}
 		$('.' + buttonText).toggleClass('disabled active'); //Replace class that was selected to visible
 		$('.active').fadeIn(750);
+		bodyNavigationHeight();
 	});
 }
 
