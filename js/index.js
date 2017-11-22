@@ -1,4 +1,4 @@
-function navigation(){
+function navigation(){ //Center navigation bar
 	$('.primary-nav').css('height', $('.logo').height());
 	$('.primary-nav li').css('margin-top', ($('.primary-nav').height()-$('.primary-nav li').height())/2 + 'px');
 
@@ -8,19 +8,17 @@ function navigation(){
 }
 
 // HOME PAGE JS
-function homeNav(){
-	$(document).ready(function(){
-		$(".primary-nav a, .navable, .main .btn, .about .btn").on('click', function(e) {
-			e.preventDefault();
-	    	var hash = this.hash;
-	    	$('body').animate({
-	    		scrollTop: $(hash).offset().top
-	      	}, 500, function(){
-	    		window.location.hash = hash;
-	      	}); 
-		});
+$(document).ready(function(){
+	$(".primary-nav a, .navable, .main .btn, .about .btn").on('click', function(e) {
+		e.preventDefault();
+    	var hash = this.hash;
+    	$('html, body').animate({
+    		scrollTop: $(hash).offset().top
+     	}, 500, function(){
+    		window.location.hash = hash;
+      	}); 
 	});
-}
+});
 
 function projects(){
 	if ($(window).width() > 343){
@@ -207,7 +205,7 @@ function projectsSelector(){
 	});
 }
 
-function playPause(){
+function playPause(){ //Projects video handler
 	if (document.getElementById('projects-sdac-video').paused){
 		document.getElementById('projects-sdac-video').play();
 	}
