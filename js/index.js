@@ -9,7 +9,7 @@ function navigation(){ //Center navigation bar
 
 // HOME PAGE JS
 $(document).ready(function(){
-	$(".primary-nav a, .navable, .main .btn, .about .btn").on('click', function(e) {
+	$(".primary-nav-home a, .navable, .main .btn, .about .btn").on('click', function(e) {
 		e.preventDefault();
     	var hash = this.hash;
     	$('html, body').animate({
